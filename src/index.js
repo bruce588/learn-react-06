@@ -3,4 +3,4 @@ Create by rabbi on 2022/7/4
 */
 
 
-console.log('test');
+console.log('hell webpack');
