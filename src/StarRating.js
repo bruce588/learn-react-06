@@ -5,6 +5,7 @@ import React from "react";
 import {FaStar} from "react-icons/all";
 
  //將引數原封不動回傳呼叫端(讓React有事情做,是為了讓程式不要出錯)
+ //們有狀態的純元件
  const  Star= ({selected=false,onSelect = f => f})=>
 {
     return (<FaStar
