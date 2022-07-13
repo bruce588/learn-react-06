@@ -28,10 +28,18 @@ const App = () =>{
         {
             <ColorList
                 colors={colors}
-                onRemoveColor={id=>{
+                onRemoveColor={
+                  (id)=>{
                   const newColors= colors.filter(color=>color.id!==id);
                   setColors(newColors);
-                }}
+                  }
+                }
+                onRateColor={
+                  (id,rating)=> {
+                    const newColors = colors.map(color => color.id === id ? {...color,rating} : color);
+                    setColors(newColors);
+                  }
+                }
             />
             }
       <span>Pressed 'a' key {count} times.</span>
